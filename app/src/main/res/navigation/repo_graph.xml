@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/repo_list">
+
+    <fragment
+        android:id="@+id/repo_list"
+        android:name="com.test.gittrendingrepo.ui.repo.list.RepoListFragment"
+        android:label="RepoListFragment"
+        tools:layout="@layout/fragment_repo_list">
+
+        <action
+            android:id="@+id/action_repo_list_to_repo_detail"
+            app:destination="@id/repo_detail">
+
+            <argument
+                android:name="repo_id"
+                app:argType="integer" />
+            <argument
+                android:name="repo_name"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/repo_detail"
+        android:name="com.test.gittrendingrepo.ui.repo.detail.RepoDetailFragment"
+        android:label="RepoDetailFragment"
+        tools:layout="@layout/fragment_repo_detail" />
+
+</navigation>

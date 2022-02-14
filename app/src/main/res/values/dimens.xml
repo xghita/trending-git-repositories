@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="loading_size">64dp</dimen>
+    <dimen name="image_size">200dp</dimen>
+    <dimen name="avatar_size">80dp</dimen>
+    <dimen name="icon_size">25dp</dimen>
+
+    <dimen name="margin_xxxLarge">50dp</dimen>
+    <dimen name="margin_xLarge">30dp</dimen>
+    <dimen name="margin_large">25dp</dimen>
+    <dimen name="margin_xStandard">20dp</dimen>
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="margin_xMedium">14dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_xSmall">5dp</dimen>
+    <dimen name="padding_xxSmall">3dp</dimen>
+
+    <dimen name="elevation_medium">10dp</dimen>
+    <dimen name="elevation_small">7dp</dimen>
+    <dimen name="corner_radius_small">7dp</dimen>
+
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_subTitle">16sp</dimen>
+    <dimen name="text_size_message">14sp</dimen>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.test.gittrendingrepo.data.repo.Repo.ListItem" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/padding_xSmall"
+        android:layout_marginEnd="@dimen/margin_standard"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:background="?android:attr/selectableItemBackground"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:elevation="@dimen/margin_xMedium"
+        android:transitionName="@string/card_view_transition"
+        app:cardCornerRadius="@dimen/margin_small"
+        app:cardElevation="@dimen/margin_small"
+        app:cardPreventCornerOverlap="false">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small">
+
+            <ImageView
+                android:id="@+id/avatarIv"
+                android:layout_width="@dimen/avatar_size"
+                android:layout_height="@dimen/avatar_size"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:background="@color/white"
+                android:contentDescription="@string/avatar"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/favoriteIv"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:src="@android:drawable/star_off"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="@{data.name}"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/avatarIv"
+                app:layout_constraintTop_toTopOf="@id/avatarIv" />
+
+            <TextView
+                android:id="@+id/languageTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_small"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@{@string/language(data.language)}"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/avatarIv"
+                app:layout_constraintTop_toBottomOf="@id/nameTv"
+                app:layout_constraintWidth_percent=".75" />
+
+            <TextView
+                android:id="@+id/watchersTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_small"
+                android:layout_marginTop="@dimen/padding_xxSmall"
+                android:layout_marginEnd="@dimen/padding_xSmall"
+                android:text="@{@string/watchers(data.watchers)}"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/avatarIv"
+                app:layout_constraintTop_toBottomOf="@id/languageTv" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

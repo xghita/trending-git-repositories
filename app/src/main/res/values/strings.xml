@@ -1,0 +1,26 @@
+<resources>
+    <string name="avatar" translatable="false">avatar</string>
+    <string name="repo_id" translatable="false">repo_id</string>
+    <string name="repo_name" translatable="false">repo_name</string>
+    <string name="card_view_transition" translatable="false">card_view</string>
+
+    <string name="repo_list_title">"Trending repositories"</string>
+    <string name="repo_detail_title">Repository Detail</string>
+
+    <string name="generic_error_title">Error</string>
+    <string name="generic_error_description">Something went wrong</string>
+    <string name="generic_error_action">Got it</string>
+
+    <string name="repo_list_nodata_title">Info</string>
+    <string name="repo_list_nodata_title_description">There is no data, please try again later</string>
+    <string name="repo_list_nodata_title_action">Got it</string>
+
+    <string name="description">Description: %1$s</string>
+    <string name="language">Language: %1$s</string>
+    <string name="watchers">Watchers: %1$s</string>
+    <string name="issues">Open issues: %1$s</string>
+    <string name="forks">Forks: %1$s</string>
+    <string name="stars">Stars: %1$s</string>
+    <string name="view_on_git">View On GitHub</string>
+
+</resources>
